@@ -1,11 +1,12 @@
 package com.cycleon.orderservice.shipment.model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Shipment {
 
     private int id;
-    private Date createdDate;
+    private LocalDateTime createdDate;
     private String originLocation;
     private String destinationLocation;
     private int noOfItems;
@@ -27,11 +28,11 @@ public class Shipment {
         this.id = id;
     }
 
-    public Date getCreatedDate() {
+    public LocalDateTime getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(Date createdDate) {
+    public void setCreatedDate(LocalDateTime createdDate) {
         this.createdDate = createdDate;
     }
 
